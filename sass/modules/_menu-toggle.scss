@@ -1,0 +1,28 @@
+@media only screen and (min-width: 993px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .menu-toggle {
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    line-height: 46px;
+    text-align: center;
+    background-color: $color-blue;
+    color: white;
+    right: 10px;
+    font-size: 19px;
+    top: 10px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 1000;
+    i:hover {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is a personal website for full stack developer John Cena">
+  <meta name="keywords" content="Full stack developer, John Cena, software engineer">
+  <meta name="author" content="Tony Peng">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clever-shaw-82d5d7.netlify.app/">
+  <meta property="og:title" content="John Cena | Full Stack Developer ©">
+  <meta property="og:image" content="https://inspiring-shaw-377da5.netlify.app./images/main.png">
+  <meta property="og:description" content="This is a personal website for full stack developer John Cena">
+  <meta property="og:site_name" content="website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/98f3f63776.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/app.css">
+  <title>John Cena | Full Stack Developer ©</title>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+  <!-- Background Image -->
+  <!-- <div class="lm-animated-bg">
+  </div> -->
+  <!-- whole page -->
+  <div class="page">
+    <div class="page-content">
+      <!-- header -->
+      <header class="site-header animate__animated ">
+        <div class="header-content">
+          <div class="header-photo">
+            <img src="./images/clients/model-1.jpg" alt="Suzuki Airi">
+          </div>
+          <div class="header-titles">
+            <h2>John Cena</h2>
+            <h4>Full Stack Developer</h4>
+          </div>
+        </div>
+        <nav class="navbar">
+          <ul class="list-group list-group-flush rounded-pill">
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Home">
+              <a href="#" class="active">
+                <span class="lnr lnr-home"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="About me">
+              <a href="#">
+                <span class="lnr lnr-user"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Resume">
+              <a href="#">
+                <span class="lnr lnr-graduation-hat"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio">
+              <a href="#">
+                <span class="lnr lnr-briefcase"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Blog">
+              <a href="#">
+                <span class="lnr lnr-book"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Contact">
+              <a href="#">
+                <span class="lnr lnr-envelope"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-links mb-3">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item text-center">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-group-item text-center">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-group-item text-center">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile-download">
+          <a href="./download/Resume - Hanyan Liu .pdf" class="btn border border-white rounded-pill px-4" download>
+            Download CV
+          </a>
+        </div>
+        <footer class='copyrights'>
+          ©2021 All rights reserved.
+        </footer>
+      </header>
+      <div class="menu-toggle">
+        <i class="lnr lnr-menu"></i>
+      </div>
+      <div class="arrows-nav">
+        <div class="arrow-right">
+          <i class="lnr lnr-chevron-right"></i>
+        </div>
+        <div class="arrow-left">
+          <i class="lnr lnr-chevron-left"></i>
+        </div>
+      </div>
+      <div class="content-area">
+        <div class="animated-sections">
+          <section class="animated-section animate__animated home container section-active" >
+            <div class="section-content vcentered">
+              <h1 class="">John Cena</h1>
+              <p class="subtitle1 animate__zoomIn">Full Stack Developer</p>
+              <p class="subtitle2 animate__zoomIn display-none">Web Developer</p>
+            </div>
+          </section>
+          <section class="animated-section animate__animated about-me container">
+            <div class="about-me-header row mb-3">
+              <h2 class="col-12 text-white text-start mb-4 h1">About <span class="text-info">Me</span></h2>
+              <div class="row">
+                <p class="col-lg-8">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, architecto doloribus? Quae laboriosam
+                  delectus doloribus et molestias autem, commodi illum, quos ipsam optio obcaecati tempora reiciendis modi
+                  error aspernatur excepturi deserunt nemo veniam praesentium maiores voluptate? Natus numquam quaerat
+                  cupiditate.
+                </p>
+                <ul class="col-lg-4 list-group">
+                  <li class="list-group-item">
+                    <span class="text-info">Age</span> 32
+                  </li>
+                  <li class="list-group-item">
+                    <span class="text-info">Residence</span> AU
+                  </li>
+                  <li class="list-group-item">
+                    <span class="text-info">Address</span> Sydney,NSW
+                  </li>
+                  <li class="list-group-item">
+                    <span class="text-info">e-mail</span> email@example.com
+                  </li>
+                  <li class="list-group-item">
+                    <span class="text-info">Phone</span> +0123 123 456 789
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row about-me-whatIdo">
+              <h2 class="col-12 text-white">What<span class="text-info"> I Do</span></h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <span class="lnr lnr-store"></span>
+                  <h3>E-commerce</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores itaque voluptatum cumque minima
+                    perspiciatis impedit maiores quos, nemo assumenda.
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  <span class="lnr lnr-pencil"></span>
+                  <h3>Copywriting</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quo sed earum corporis ipsum hic qui nulla
+                    dolores, incidunt repellat?
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  <span class="lnr lnr-laptop-phone"></span>
+                  <h3>Web Design</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quo sed earum corporis ipsum hic qui nulla
+                    dolores, incidunt repellat?
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  <span class="lnr lnr-flag"></span>
+                  <h3>Management</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quo sed earum corporis ipsum hic qui nulla
+                    dolores, incidunt repellat?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="about-me-testimonials mt-5">
+              <h3>Testimonials</h3>
+              <div class="about-me-testimonials-content">
+                <div class="owl-carousel owl-theme">
+                  <div class="testimonial card text-center text-white">
+                    <img class="card-img-top" src="https://randomuser.me/api/portraits/women/6.jpg" alt="">
+                    <div class="card-body text-start">
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, velit
+                        quisquam enim quidem deserunt quod! Repudiandae sed fugit enim!
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h4 class="card-title">Julia Hickman</h4>
+                          <p class="text-secondary">Omni Source</p>
+                        </div>
+                        <i class="fas fa-quote-right h2 mt-3 text-info"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial card text-center text-white">
+                    <img class="card-img-top" src="https://randomuser.me/api/portraits/men/8.jpg" alt="">
+                    <div class="card-body text-start">
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, velit
+                        quisquam enim quidem deserunt quod! Repudiandae sed fugit enim!
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h4 class="card-title">Robert Watkins</h4>
+                          <p class="text-secondary">Endicott Shoes</p>
+                        </div>
+                        <i class="fas fa-quote-right h2 mt-3 text-info"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial card text-center text-white">
+                    <img class="card-img-top" src="https://randomuser.me/api/portraits/women/4.jpg" alt="">
+                    <div class="card-body text-start">
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, velit
+                        quisquam enim quidem deserunt quod! Repudiandae sed fugit enim!
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h4 class="card-title">Kristin Carroll</h4>
+                          <p class="text-secondary">Helping Hand</p>
+                        </div>
+                        <i class="fas fa-quote-right h2 mt-3 text-info"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <div class="about-me-clients">
+              <div class="about-me-clients-header text-white">
+                <h3>Clients</h3>
+              </div>
+              <div class="owl-carousel owl-theme">
+                <a class="img-wrapper" href="#">
+                  <img src="./images/clients/client-1.png" alt="">
+                </a>
+                <a href="#" class="img-wrapper">
+                  <img src="./images/clients/client-2.png" alt="">
+                </a>
+                <a href="#" class="img-wrapper">
+                  <img src="./images/clients/client-3.png" alt="">
+                </a>
+                <a href="#" class="img-wrapper">
+                  <img src="./images/clients/client-4.png" alt="">
+                </a>
+                <a href="#" class="img-wrapper">
+                  <img src="./images/clients/client-5.png" alt="">
+                </a>
+                <a href="#" class="img-wrapper">
+                  <img src="./images/clients/client-6.png" alt="">
+                </a>
+                <a href="#" class="img-wrapper">
+                  <img src="./images/clients/client-7.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <!-- pricing -->
+            <div class="about-me-pricing text-white">
+              <h3>
+                Pricing
+              </h3>
+              <div class="about-me-pricing-content row d-flex">
+                <div class="about-me-pricing-content-left col-lg-6 text-center">
+                  <h4 class="mb-4 text-white">
+                    Normal Web Design
+                  </h4>
+                  <h5 class="h1 text-white">$64</h5>
+                  <p>per month</p>
+                  <button class="btn btn-secondary rounded-pill m-3">Free Trial</button>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, fuga?</p>
+                </div>
+                <div class="about-me-pricing-content-right col-lg-6 text-center">
+                  <h4 class="mb-4 text-white">
+                    Premium Web Design
+                  </h4>
+                  <h5 class="h1 text-white">$128</h5>
+                  <p>per month</p>
+                  <button class="btn btn-secondary rounded-pill m-3">Free Trial</button>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius veritatis dicta?</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- fun facts -->
+            <div class="about-me-funFacts">
+              <h3>Fun <span class="text-info">Facts</span></h3>
+              <div class="row about-me-funFacts-content">
+                <div class="card col-lg-4 text-center">
+                  <span class="lnr lnr-heart"></span>
+                  <div class="card-body">
+                    <h4 class="card-title">Happy Clients</h4>
+                    <p class="card-text">578</p>
+                  </div>
+                </div>
+                <div class="card col-lg-4 text-center">
+                  <span class="lnr lnr-clock"></span>
+                  <div class="card-body">
+                    <h4 class="card-title">Working hours</h4>
+                    <p class="card-text">4,780</p>
+                  </div>
+                </div>
+                <div class="card col-lg-4 text-center">
+                  <span class="lnr lnr-star"></span>
+                  <div class="card-body">
+                    <h4 class="card-title">Awards Won</h4>
+                    <p class="card-text">15</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="animated-section animate__animated resume container">
+            <div class="row">
+              <h2 class="resume-title">Resume</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-7 resume-timeline">
+                <div class="education">
+                  <h3>Education</h3>
+                <div class="d-flex">
+                  <div class="time-line">
+                    <h4>2008</h4>
+                    <p>University of Studies</p>
+                  </div>
+                  <div class="subjects">
+                    <h4>Frontend Development</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="time-line">
+                    <h4>2007</h4>
+                    <p>University of Studies</p>
+                  </div>
+                  <div class="subjects">
+                    <h4>Frontend Development</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?
+                    </p>
+                  </div>
+                </div>
+                </div>
+                <div class="experience">
+                  <h3>Experience</h3>
+                  <div class="d-flex">
+                    <div class="time-line">
+                      <h4>2016 - Current</h4>
+                      <p>Google</p>
+                    </div>
+                    <div class="jobtitle">
+                      <h4>Lead UI/UX Designer</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="time-line">
+                      <h4>2013 - 2016</h4>
+                      <p>Adobe</p>
+                    </div>
+                    <div class="jobtitle">
+                      <h4>Senior UI/UX Designer</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="time-line">
+                      <h4>2011 - 2013</h4>
+                      <p>Google</p>
+                    </div>
+                    <div class="jobtitle">
+                      <h4>Junior UI/UX Designer</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="col-sm-5 skills">
+                <div class="design-skills">
+                  <h3>Design <span>Skills</span></h3>
+                  <ul class="list-group list-group-horizontal flex-wrap">
+                    <li class="list-group-item">Web Design</li>
+                    <li class="list-group-item">Print Design</li>
+                    <li class="list-group-item">Logo Design</li>
+                    <li class="list-group-item">Graphic Design</li>
+                    <li class="list-group-item">Time Management</li>
+                  </ul>
+                </div>
+                <div class="coding-skills">
+                  <h3>Coding <span>Skills</span></h3>
+                  <ul class="list-group list-group-horizontal flex-wrap">
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">HTML/CSS</li>
+                    <li class="list-group-item">Digital Design</li>
+                    <li class="list-group-item">Bootstrap 5</li>
+                    <li class="list-group-item">React</li>
+                    <li class="list-group-item">NodeJS</li>
+                    <li class="list-group-item">AWS</li>
+                    <li class="list-group-item">Docker</li>
+                    <li class="list-group-item">Restful API</li>
+                  </ul>
+                </div>
+                <div class="knowledges">
+                  <h3>Knowledges</h3>
+                  <div class="knowledges-content">
+                    <ul class="list-group list-group-horizontal flex-wrap">
+                      <li class="list-group-item">Marketing</li>
+                      <li class="list-group-item">Print</li>
+                      <li class="list-group-item">Digital Design</li>
+                      <li class="list-group-item">Social Media</li>
+                      <li class="list-group-item">Time Management</li>
+                      <li class="list-group-item">Communication</li>
+                      <li class="list-group-item">Problem-Solving</li>
+                      <li class="list-group-item">Social Networking</li>
+                      <li class="list-group-item">Flexibility</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row certificate">
+              <h3>Certificates</h3>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="cert-wrapper d-flex">
+                    <div class="cert-logo d-flex align-items-center">
+                      <img src="./images/clients/client-3.png" alt="magic furniture">
+                    </div>
+                    <div class="cert-content">
+                      <h4>Psychology of Internation Design</h4>
+                      <p>Membership ID:XXXX</p>
+                      <P>19 April 2018</P>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="cert-wrapper d-flex">
+                    <div class="cert-logo d-flex align-items-center">
+                      <img src="./images/clients/client-4.png" alt="life guard">
+                    </div>
+                    <div class="cert-content">
+                      <h4>Psychology of Internation Design</h4>
+                      <p>Membership ID:XXXX</p>
+                      <P>19 April 2018</P>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="animated-section animate__animated portfolio container">
+            <div class="row">
+              <h2 class="portfolio-title">
+                Portfolio
+              </h2>
+            </div>
+            <div class="row">
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">
+                  <a href="">All</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="">Detailed</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="">Mockups</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="">SoundCloud</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="">Vimeo Videos</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="">Youtube Videos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="row d-flex flex-row portfolio-cards">
+              <div class="portfolio-card">
+                <figure>
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/random/500x500" alt="random picture">
+                  </div>
+                  <figcaption>SoundCloud Audio</figcaption>
+                  <span>SoundCloud</span>
+                  <i class="lnr lnr-volume-high"></i>
+                </figure>
+                
+              </div>
+              <div class="portfolio-card">
+                <figure>
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/random/500x500" alt="random picture">
+                  </div>
+                  <figcaption>Detailed Project 2</figcaption>
+                  <span>Detailed</span>
+                  <i class="far fa-file-alt"></i>
+                </figure>
+              </div>
+              <div class="portfolio-card">
+                <figure>
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/random/500x500" alt="random picture">
+                  </div>
+                  <figcaption>Vimeo Video 1</figcaption>
+                  <span>Vimeo Video</span>
+                  <i class="lnr lnr-film-play"></i>
+                </figure>
+              </div>
+              <div class="portfolio-card">
+                <figure>
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/random/500x500" alt="random picture">
+                  </div>
+                  <figcaption>Detailed Project 1</figcaption>
+                  <span>Detailed</span>
+                  <i class="far fa-file-alt"></i>
+                </figure>
+              </div>
+              <div class="portfolio-card">
+                <figure>
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/random/500x500" alt="random picture">
+                  </div>
+                  <figcaption>Mockup Design 1</figcaption>
+                  <span>Mockups</span>
+                  <i class="lnr lnr-picture"></i>
+                </figure>
+              </div>
+              <div class="portfolio-card">
+                <figure>
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/random/500x500" alt="random picture">
+                  </div>
+                  <figcaption>Youtube Video 1</figcaption>
+                  <span>SoundCloud</span>
+                  <i class="lnr lnr-film-play"></i>
+                </figure>
+              </div>
+            </div>
+          </section>
+          <section class="animated-section animate__animated blog container ">
+            <div class="row">
+              <h2>Blog</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 py-3">
+                <div class="blog-item">
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/400x200" alt="random picture">
+                    <span>Design</span>
+                    <i class="lnr lnr-book"></i>
+                  </div>
+                  <div class="blog-wrapper p-3">
+                    <p class="blog-date">05 Mar 2020</p>
+                    <h4 class="blog-title">
+                      Why I Switched to Sketch For UI Design
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 py-3">
+                <div class="blog-item">
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/400x200" alt="random picture">
+                    <span>UI</span>
+                    <i class="lnr lnr-book"></i>
+                  </div>
+                  <div class="blog-wrapper p-3">
+                    <p class="blog-date">23 Feb 2020</p>
+                    <h4 class="blog-title">
+                      Best Practices for Animated Progress Indicators
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 py-3">
+                <div class="blog-item">
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/400x200" alt="random picture">
+                    <span>Design</span>
+                    <i class="lnr lnr-book"></i>
+                  </div>
+                  <div class="blog-wrapper p-3">
+                    <p class="blog-date">06 Feb 2020</p>
+                    <h4 class="blog-title">
+                      Designing the Perfect Feature Comparison Table
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 py-3">
+                <div class="blog-item">
+                  <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/400x200" alt="random picture">
+                    <span>UI</span>
+                    <i class="lnr lnr-book"></i>
+                  </div>
+                  <div class="blog-wrapper p-3">
+                    <p class="blog-date">07 Jan 2020</p>
+                    <h4 class="blog-title">
+                      An Overview of E-commerce Platforms
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="animated-section animate__animated contact container">
+            <div class="row">
+              <h2>Contact</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 d-flex flex-column contact-infos">
+                <div class="contact-info">
+                  <i class="lnr lnr-map-marker"></i>
+                  <h4>San Francisco</h4>
+                </div>
+                <div class="contact-info">
+                  <i class="lnr lnr-phone-handset"></i>
+                  <h4>040-123-1112</h4>
+                </div>
+                <div class="contact-info">
+                  <i class="lnr lnr-envelope"></i>
+                  <h4>example@gmail.com</h4>
+                </div>
+                <div class="contact-info">
+                  <i class="lnr lnr-checkmark-circle"></i>
+                  <h4>Freelance Available</h4>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="row map">
+                  <div id="map"></div>
+                </div>
+                <div class="row">
+                  <h3>How Can I <span>Help You ?</span></h3>
+                </div>
+                <div class="row">
+                  <form>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="input-wrapper">
+                          <input type="text" id="name" name="name"><br><br>
+                          <label for="name">Full Name</label>
+                          <span class='brush'></span>
+                          <span>Name is required.</span>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="email" id="email" name="email"><br><br>
+                          <label for="email">Email Address</label>
+                          <span class='brush'></span>
+                          <span>Valid email is required.</span>
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="text" id="subject" name="subject"><br><br>
+                          <label for="subject">Subject</label>
+                          <span class='brush'></span>
+                          <span>Subject required.</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 textarea-wrapper">
+                        <textarea name="message" id="message"></textarea>
+                        <label for="message">Message</label>
+                      </div>           
+                    </div>
+                  </form>
+                </div>
+                <div class="row">
+                  <div class="g-recaptcha" data-sitekey="6LenQP4cAAAAAPX4gAyU59RLo8NjGgYAZMJ_L9SC"></div>
+                </div>
+                <div class="row">
+                  <div>
+                    <button class="col-sm-6 btn btn-primary mt-2">
+                      Send message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia2FpeWFuZyIsImEiOiJja3VqYXhyYTAydnkwMzBtYWZldXlia291In0.7NMFvjoUWv4QTqzCJJaKPQ';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    center:[151.21,-33.88],
+    style: 'mapbox://styles/mapbox/streets-v11',
+    zoom:11
+    });
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
