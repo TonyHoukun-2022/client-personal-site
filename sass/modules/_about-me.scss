@@ -159,6 +159,9 @@
       @include dotsDecoration(50%, 10%, 6%, 50%, #04b4e0, 0);
     }
     &-content {
+      div {
+        min-width: 320px;
+      }
       &-left {
         border: 1px solid #ccc;
         border-radius: 2rem;

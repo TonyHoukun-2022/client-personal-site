@@ -1,10 +1,10 @@
-// .animate__animated.animate__slideInRight,
-// .animate__animated.animate__slideOutRight {
-//   --animate-duration: 0.2s;
-// }
+.animate__animated.animate__slideInRight,
+.animate__animated.animate__slideOutRight {
+  --animate-duration: 0.5s;
+}
 
 .site-header {
-  float: left;
+  position:absolute;
   width: 100%;
   max-width: 380px;
   height: 100%;
@@ -12,7 +12,7 @@
   min-height: inherit;
   text-align: center;
   padding: 70px 30px 0;
-  overflow: auto;
+  overflow: hidden;
   .header-photo {
     position: relative;
     width: 180px;

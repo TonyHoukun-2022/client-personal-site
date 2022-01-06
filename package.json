@@ -1,5 +1,5 @@
 {
-  "name": "personalsiteforjessie",
+  "name": "personalSiteForClient",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -9,15 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gamedevleo/PersonalSiteForJessie.git"
+    "url": "git+https://github.com/tonypeng-93/client-personal-site.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gamedevleo/PersonalSiteForJessie/issues"
-  },
-  "homepage": "https://github.com/gamedevleo/PersonalSiteForJessie#readme",
+  "homepage": "https://github.com/tonypeng-93/client-personal-site#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "jquery": "^3.6.0",
     "node-sass": "^7.0.0"
   }
 }

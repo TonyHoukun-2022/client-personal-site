@@ -23,3 +23,9 @@
     -o-border-radius: $border-radius;
   }
 }
+
+@mixin horizontal-center{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}

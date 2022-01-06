@@ -22,3 +22,20 @@
 .tooltip-inner {
   background: #04b4e0;
 }
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    width: 400px;
+    bottom:0;
+    top:calc(100vh - 50px);
+    @include horizontal-center;
+   .list-group {
+     flex-direction: row;
+     width:100%;
+     justify-content: space-between;
+     &-item{
+       width:50px;
+     }
+   }
+  }
+}

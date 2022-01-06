@@ -10,22 +10,28 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://clever-shaw-82d5d7.netlify.app/">
   <meta property="og:title" content="John Cena | Full Stack Developer ©">
-  <meta property="og:image" content="https://inspiring-shaw-377da5.netlify.app./images/main.png">
-  <meta property="og:description" content="This is a personal website for full stack developer John Cena">
-  <meta property="og:site_name" content="website">
+  <meta property="og:image" content="https://clever-shaw-82d5d7.netlify.app/#./images/main.png">
+  <meta property="og:description" content="This is a personal website for John Cena">
+  <meta property="og:site_name" content="John Cena website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- putting scripts in HEAD is easy and guarantees that they will be Available before the page is shown -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- mapbox api cdn -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+<!-- recaptcha v3 cdn -->
+<!-- defer with async attributes => The script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes) -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/98f3f63776.js" crossorigin="anonymous"></script>
+  <!-- linear icon cdn -->
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
   <title>John Cena | Full Stack Developer ©</title>
 </head>
 <body class="d-flex justify-content-center align-items-center">
@@ -36,50 +42,16 @@
   <div class="page">
     <div class="page-content">
       <!-- header -->
-      <header class="site-header animate__animated ">
+      <header class="site-header animate__animated">
         <div class="header-content">
           <div class="header-photo">
-            <img src="./images/clients/model-1.jpg" alt="Suzuki Airi">
+            <img src="./images/clients/model-1.jpg" alt="John Cena">
           </div>
           <div class="header-titles">
             <h2>John Cena</h2>
             <h4>Full Stack Developer</h4>
           </div>
         </div>
-        <nav class="navbar">
-          <ul class="list-group list-group-flush rounded-pill">
-            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Home">
-              <a href="#" class="active">
-                <span class="lnr lnr-home"></span>
-              </a>
-            </li>
-            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="About me">
-              <a href="#">
-                <span class="lnr lnr-user"></span>
-              </a>
-            </li>
-            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Resume">
-              <a href="#">
-                <span class="lnr lnr-graduation-hat"></span>
-              </a>
-            </li>
-            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio">
-              <a href="#">
-                <span class="lnr lnr-briefcase"></span>
-              </a>
-            </li>
-            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Blog">
-              <a href="#">
-                <span class="lnr lnr-book"></span>
-              </a>
-            </li>
-            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Contact">
-              <a href="#">
-                <span class="lnr lnr-envelope"></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
         <div class="social-links mb-3">
           <ul class="list-group list-group-horizontal">
             <li class="list-group-item text-center">
@@ -100,14 +72,48 @@
           </ul>
         </div>
         <div class="profile-download">
-          <a href="./download/Resume - Hanyan Liu .pdf" class="btn border border-white rounded-pill px-4" download>
+          <a href="#" class="btn border border-white rounded-pill px-4" download>
             Download CV
           </a>
         </div>
         <footer class='copyrights'>
-          ©2021 All rights reserved.
+          ©2022 All rights reserved.
         </footer>
       </header>
+      <nav class="navbar">
+          <ul class="list-group rounded-pill">
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement title="Home">
+              <a href="#" class="active">
+                <span class="lnr lnr-home"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement title="About me">
+              <a href="#">
+                <span class="lnr lnr-user"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement title="Resume">
+              <a href="#">
+                <span class="lnr lnr-graduation-hat"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement title="Portfolio">
+              <a href="#">
+                <span class="lnr lnr-briefcase"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement title="Blog">
+              <a href="#">
+                <span class="lnr lnr-book"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement title="Contact">
+              <a href="#">
+                <span class="lnr lnr-envelope"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       <div class="menu-toggle">
         <i class="lnr lnr-menu"></i>
       </div>
@@ -641,7 +647,7 @@
               <div class="col-sm-4 d-flex flex-column contact-infos">
                 <div class="contact-info">
                   <i class="lnr lnr-map-marker"></i>
-                  <h4>San Francisco</h4>
+                  <h4>Sydney Epping</h4>
                 </div>
                 <div class="contact-info">
                   <i class="lnr lnr-phone-handset"></i>
@@ -664,26 +670,28 @@
                   <h3>How Can I <span>Help You ?</span></h3>
                 </div>
                 <div class="row">
-                  <form>
+                  <form name="contactForm" id="contactForm">
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="input-wrapper">
-                          <input type="text" id="name" name="name"><br><br>
-                          <label for="name">Full Name</label>
-                          <span class='brush'></span>
-                          <span>Name is required.</span>
+                          <input type="text" id="name" name="name">
+                          <label for="name">Full Name*</label>
+                          <!-- <span class="error-message">Name is required.</span> -->
                         </div>
                         <div class="input-wrapper">
-                          <input type="email" id="email" name="email"><br><br>
-                          <label for="email">Email Address</label>
-                          <span class='brush'></span>
-                          <span>Valid email is required.</span>
+                          <input type="text" id="age" name="age">
+                          <label for="age">Your age*</label>
+                          <span class="error-message">Age must over 18.</span>
                         </div>
                         <div class="input-wrapper">
-                          <input type="text" id="subject" name="subject"><br><br>
-                          <label for="subject">Subject</label>
-                          <span class='brush'></span>
-                          <span>Subject required.</span>
+                          <input type="email" id="email" name="email">
+                          <label for="email">Email Address*</label>
+                          <!-- <span class="error-message">Valid email is required.</span> -->
+                        </div>
+                        <div class="input-wrapper">
+                          <input type="text" id="subject" name="subject">
+                          <label for="subject">Subject*</label>
+                          <span class="error-message">Subject required.</span>
                         </div>
                       </div>
                       <div class="col-sm-6 textarea-wrapper">
@@ -691,17 +699,15 @@
                         <label for="message">Message</label>
                       </div>           
                     </div>
+                    <div class="row">
+                      <div class="g-recaptcha recaptcha-wrapper" data-sitekey="6LenQP4cAAAAAPX4gAyU59RLo8NjGgYAZMJ_L9SC"></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button class="col-sm-6 btn btn-primary mt-2">
+                          Send message
+                        </button>
+                    </div>
                   </form>
-                </div>
-                <div class="row">
-                  <div class="g-recaptcha" data-sitekey="6LenQP4cAAAAAPX4gAyU59RLo8NjGgYAZMJ_L9SC"></div>
-                </div>
-                <div class="row">
-                  <div>
-                    <button class="col-sm-6 btn btn-primary mt-2">
-                      Send message
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -711,12 +717,13 @@
     </div>
   </div>
   <script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoia2FpeWFuZyIsImEiOiJja3VqYXhyYTAydnkwMzBtYWZldXlia291In0.7NMFvjoUWv4QTqzCJJaKPQ';
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9ueXBlbmcxIiwiYSI6ImNrdTlhNDBmNTA0d2gzMHFwMzZiaXhiNGsifQ.7J76uCgUFyDeP5HlwG1bRA';
     var map = new mapboxgl.Map({
     container: 'map',
-    center:[151.21,-33.88],
+    // epping
+    center:[151.0818400,-33.7727100],
     style: 'mapbox://styles/mapbox/streets-v11',
-    zoom:11
+    zoom:12
     });
     </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

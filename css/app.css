@@ -97,8 +97,12 @@ html {
       border-radius: 0;
       min-height: 100%; } }
 
+.animate__animated.animate__slideInRight,
+.animate__animated.animate__slideOutRight {
+  --animate-duration: 0.5s; }
+
 .site-header {
-  float: left;
+  position: absolute;
   width: 100%;
   max-width: 380px;
   height: 100%;
@@ -106,7 +110,7 @@ html {
   min-height: inherit;
   text-align: center;
   padding: 70px 30px 0;
-  overflow: auto; }
+  overflow: hidden; }
   .site-header .header-photo {
     position: relative;
     width: 180px;
@@ -215,6 +219,21 @@ html {
 .tooltip-inner {
   background: #04b4e0; }
 
+@media only screen and (max-width: 992px) {
+  .navbar {
+    width: 400px;
+    bottom: 0;
+    top: calc(100vh - 50px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+    .navbar .list-group {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between; }
+      .navbar .list-group-item {
+        width: 50px; } }
+
 .arrows-nav {
   position: absolute;
   padding: 10px 0;
@@ -269,6 +288,7 @@ html {
 
 .content-area {
   position: absolute;
+  top: 0;
   right: 0;
   width: 100%;
   height: 100%;
@@ -530,6 +550,8 @@ html {
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       -o-border-radius: 0; }
+  .about-me-pricing-content div {
+    min-width: 320px; }
   .about-me-pricing-content-left {
     border: 1px solid #ccc;
     border-radius: 2rem;
@@ -981,7 +1003,6 @@ html {
 .contact {
   padding: 5px; }
   .contact h2 {
-    margin-bottom: 20px;
     position: relative; }
     .contact h2::after {
       position: absolute;
@@ -999,24 +1020,26 @@ html {
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       -o-border-radius: 0; }
-  .contact-infos .contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #444;
-    border: 1px solid #666;
-    margin-bottom: 10px;
-    padding: 10px 0; }
-    .contact-infos .contact-info i {
-      font-size: 30px;
+  .contact-infos {
+    justify-content: space-between; }
+    .contact-infos .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #444;
+      border: 1px solid #666;
       margin-bottom: 10px;
-      color: #04b4e0; }
-    .contact-infos .contact-info h4 {
-      font-size: 15px;
-      font-weight: 800; }
+      padding: 15px 0; }
+      .contact-infos .contact-info i {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #04b4e0; }
+      .contact-infos .contact-info h4 {
+        font-size: 15px;
+        font-weight: 800; }
   .contact .row.map {
-    height: 100px;
+    height: 200px;
     padding: 0 12px 0 12px; }
     .contact .row.map #map {
       width: 100%;
@@ -1045,16 +1068,14 @@ html {
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0; }
-  .contact form .row {
+  .contact form#contactForm .row {
     padding-right: 12px; }
-  .contact form .input-wrapper {
+  .contact form#contactForm .input-wrapper {
     position: relative;
     height: 30px;
-    margin-bottom: 20px; }
-    .contact form .input-wrapper:focus-within .brush::after {
-      animation-name: brush;
-      animation-duration: 0.2s; }
-    .contact form .input-wrapper input {
+    margin-bottom: 30px;
+    font-size: 14px; }
+    .contact form#contactForm .input-wrapper input {
       position: relative;
       background-color: transparent;
       border: 1px solid #b5b6b7;
@@ -1063,51 +1084,32 @@ html {
       width: 100%;
       height: 100%;
       padding: 5px;
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px; }
-    .contact form .input-wrapper input:focus {
+      border-radius: 5px; }
+    .contact form#contactForm .input-wrapper input:focus {
       border: 1px solid #04b4e0; }
-      .contact form .input-wrapper input:focus ~ label {
+      .contact form#contactForm .input-wrapper input:focus ~ label {
         font-size: 12px;
         top: -18px;
         left: 0;
         color: #04b4e0; }
-    .contact form .input-wrapper label {
+    .contact form#contactForm .input-wrapper label {
       position: absolute;
-      top: 5px;
+      top: 3px;
       left: 8px;
       color: #b5b6b7;
-      transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out; }
-    .contact form .input-wrapper span {
-      display: none; }
-    .contact form .input-wrapper .brush {
-      display: inline-block;
+      transition: all 0.3s ease-in-out; }
+    .contact form#contactForm .input-wrapper label.error-message {
+      color: #f00;
+      font-size: 12px;
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none; }
-      .contact form .input-wrapper .brush::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1px;
-        height: 100%;
-        background-color: #04b4e0;
-        visibility: hidden; }
-  .contact form .textarea-wrapper {
+      top: 32px;
+      line-height: 1; }
+    .contact form#contactForm .input-wrapper span.error-message {
+      display: none; }
+  .contact form#contactForm .textarea-wrapper {
     position: relative;
     padding: 0; }
-    .contact form .textarea-wrapper textarea {
+    .contact form#contactForm .textarea-wrapper textarea {
       width: 100%;
       height: auto;
       min-height: 85%;
@@ -1117,33 +1119,20 @@ html {
       border: 1px solid #b5b6b7;
       outline: none;
       padding: 5px 10px;
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px; }
-      .contact form .textarea-wrapper textarea:focus {
+      border-radius: 5px; }
+      .contact form#contactForm .textarea-wrapper textarea:focus {
         border: 1px solid #04b4e0; }
-        .contact form .textarea-wrapper textarea:focus ~ label {
+        .contact form#contactForm .textarea-wrapper textarea:focus ~ label {
           font-size: 12px;
           top: -18px;
           left: 0;
           color: #04b4e0; }
-    .contact form .textarea-wrapper label {
+    .contact form#contactForm .textarea-wrapper label {
       position: absolute;
       top: 10px;
       left: 15px;
       color: #b5b6b7;
-      transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
 
-@keyframes brush {
-  0% {
-    visibility: hidden;
-    left: 0; }
-  100% {
-    visibility: visible;
-    left: 100%; } }
+.recaptcha-wrapper > div {
+  margin: 0 auto; }
